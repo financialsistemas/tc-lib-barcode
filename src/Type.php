@@ -432,7 +432,7 @@ abstract class Type extends \Com\Tecnick\Barcode\Type\Convert
         $html .= '">'."\n";
         $bars = $this->getBarsArray('XYWH');
         foreach ($bars as $rect) {
-            $html .= "\t".'<div style="background-color:'.$this->color_obj->getCssColor().';'
+            $html .= "\t".'<div style="background-color:'.$this->color_obj->getCssColor().'!important;'
                 .'left:'.sprintf('%F', $rect[0]).'px;'
                 .'top:'.sprintf('%F', $rect[1]).'px;'
                 .'width:'.sprintf('%F', $rect[2]).'px;'
